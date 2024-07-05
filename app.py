@@ -8,7 +8,7 @@ app = Flask(__name__)
 reg_model = pickle.load(open('lin_reg_model.pkl', 'rb'))
 scalar = pickle.load(open('scaling.pkl', 'rb'))
 
-@app.route('/')
+@app.route('/home')
 def home():
     return render_template('home.html')
 
