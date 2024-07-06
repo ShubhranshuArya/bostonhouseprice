@@ -5,7 +5,7 @@ import pandas as pd
 
 app = Flask(__name__)
 # Load the pickled model
-reg_model = pickle.load(open('lin_reg_model.pkl', 'rb'))
+reg_model = pickle.load(open('linregmodel.pkl', 'rb'))
 scalar = pickle.load(open('scaling.pkl', 'rb'))
 
 @app.route('/home')
